@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(34,34,34);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    /*o display: flex é um metodo de estilização simples de se manipular
+    e posicionar os elementos na tela*/
+    flex-direction: row;
+    /*irá deixar os elementos alinhados (ROW)*/
+    justify-content: space-between;
+    /*criará um espaço entre eles*/
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: blueviolet;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+h1{
+     font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    color: blueviolet;
+}
+
+p{
+    max-width: 500px;
+    line-height: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    width: 400px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 100px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+}
